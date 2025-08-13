@@ -13,4 +13,8 @@ export default class Task {
     getDescription() {
         return this.description
     }
+
+    getDueDate() {
+        return this.dueDate
+    }
 }
