@@ -1,7 +1,11 @@
 import './styles.css'
 
 import Project from './Project'
+import Task from './Task'
 
+const myProject = new Project()
+myProject.addTask(new Task("title", "test", 1, "high"))
+console.log(myProject);
 
 
 // const a = new Project('a')
