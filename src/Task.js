@@ -9,5 +9,8 @@ export default class Task {
     getTitle() {
         return this.title
     }
-    
+
+    getDescription() {
+        return this.description
+    }
 }
