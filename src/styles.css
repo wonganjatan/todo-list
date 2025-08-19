@@ -1,5 +1,16 @@
 .content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: aqua;
     
+}
+
+.project {
+    flex: 4;
+    background-color: red;
 }
 
 .sidebar-group {
@@ -8,6 +19,7 @@
 
 .sidebar-profile {
     display: flex;
+    justify-content: space-between;
 }
 
 .profile {
