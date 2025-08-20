@@ -16,7 +16,7 @@
 }
 
 .sidebar-group {
-
+    
 }
 
 .sidebar-profile {
@@ -27,6 +27,12 @@
 .profile {
     display: flex;
     gap: 10px;
+    justify-content: center;
+}
+
+.sidebar-tasks {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
