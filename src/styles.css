@@ -15,10 +15,6 @@
     background-color: red;
 }
 
-.sidebar-group {
-
-}
-
 .sidebar-profile {
     display: flex;
     justify-content: space-between;
@@ -30,7 +26,8 @@
     justify-content: center;
 }
 
-.sidebar-tasks, .sidebar-project {
+.sidebar-tasks, .sidebar-project,
+.sidebar-team {
     display: flex;
     flex-direction: column;
     justify-content: center;
