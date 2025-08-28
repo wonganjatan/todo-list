@@ -3,6 +3,11 @@ import './styles.css'
 import Project from './Project'
 import Task from './Task'
 
+const addTask = document.querySelector('#add-task')
+addTask.addEventListener('click', () => {
+    alert('clicked!')
+})
+
 // const myProject = new Project()
 // myProject.addTask(new Task("title", "test", 1, "high"))
 // console.log(myProject);
