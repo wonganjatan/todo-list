@@ -5,6 +5,19 @@ import Task from './Task'
 
 const myProjectList = new Project('My Project')
 
+function renderTasks() {
+    const tasksDiv = document.querySelector('.tasks')
+    tasksDiv.textContent = ""
+
+    for (let i = 0; i < myProjectList.tasks.length; i++) {
+        const task = myProjectList.tasks[i]
+        const newTask = document.createElement('div')
+        newTask.textContent = `${task.title} - ${task.dueDate} ${task.priority}`
+
+        tasksDiv.appendChild(newTask)
+    }
+}
+
 const addTask = document.querySelector('#add-task')
 addTask.addEventListener('click', () => {
     const taskTitle = prompt("Enter task title:")
@@ -15,5 +28,5 @@ addTask.addEventListener('click', () => {
     const task = new Task(taskTitle, taskDescription, taskDueDate, taskPriority)
 
     myProjectList.addTask(task)
-    console.log(myProjectList)
+    renderTasks()
 })
